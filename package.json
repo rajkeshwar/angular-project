@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "gh-build": "PUBLIC_URL=/angular-project/ npm run build",
+    "gh-pages": "npm run gh-build && git subtree push --prefix dist origin gh-pages"
   },
   "private": true,
   "dependencies": {
