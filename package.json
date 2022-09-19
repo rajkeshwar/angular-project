@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "gh-build": "ng build --base-href /angular-project/",
-    "gh-pages": "npm run gh-build && git subtree push --prefix dist/angular-project origin gh-pages"
+    "gh-build": "ng build --output-path website --base-href /angular-project/",
+    "gh-pages": "npm run gh-build && git subtree push --prefix website origin gh-pages"
   },
   "private": true,
   "dependencies": {
